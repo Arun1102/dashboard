@@ -1,0 +1,99 @@
+.Sidebar{
+   background-color: GhostWhite;
+   color: black;
+   min-height: 100vh;
+   flex: 2;
+   border-right: 0.5px solid rgb(230,227,227);
+   position: relative;
+
+   .logo{
+    color: #5D3FD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    }
+
+    .center{
+        padding-top: 10px;
+        ul{
+            list-style: none;
+            
+
+            p{
+                font-size: 12px;
+                color: LightSteelBlue;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                color: grey;
+                // padding: 10px;
+                // background-color: aqua;
+                
+                .icons{
+                    
+                    color: #5D3FD3;
+                }
+
+                span{
+                    padding: 10px;
+                    border-radius: 5px;
+                    // background-color:green;
+
+                    &:hover{
+                        background-color:#E6E6FA;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    
+        
+       
+
+        
+    
+    hr{
+        height: 0;
+        border: 0.5px solid rgb(230,227,227);
+    }
+   
+    .bottom{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 1;
+        margin: 10px;
+        justify-content: center;
+        .title{
+            color: LightSteelBlue;
+
+        }
+        .coloroptions{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: white;
+            }
+            &:nth-child(2){
+                background-color: black;
+            }
+
+        }
+    }
+
+
+}

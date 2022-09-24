@@ -1,0 +1,50 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    background-color: GhostWhite;
+    height: 43px;
+    border-bottom: 1.5px solid rgb(230,227,227);
+
+    .wrapper{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content:space-between;
+        padding: 15px;
+        .search{
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            input{
+                border: none;
+                color: grey;
+                padding: 5px;
+                background-color: transparent;
+            }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+            
+            .icons{
+                margin-left: 20px;
+
+                
+            }
+
+            .profilepic{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+
+        }
+
+
+    }
+}
