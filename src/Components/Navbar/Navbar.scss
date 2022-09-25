@@ -24,16 +24,26 @@
                 padding: 5px;
                 background-color: transparent;
             }
+
+            .icons{
+                color: grey;
+            }
         }
 
         .right{
             display: flex;
             align-items: center;
+           
             
             .icons{
                 margin-left: 20px;
+                color: grey;
 
                 
+            }
+
+            span{
+                color: grey;  
             }
 
             .profilepic{
@@ -42,6 +52,33 @@
                 border-radius: 50%;
                 margin-left: 10px;
             }
+
+            .bellnotify{
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 30px;
+                height: 30px;
+                // background-color: green;
+                
+                .item{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: red;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 10px;
+                    color: white;
+                }
+            }
+
+            
+
+            
 
         }
 

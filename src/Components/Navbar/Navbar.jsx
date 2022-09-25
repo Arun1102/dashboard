@@ -14,16 +14,28 @@ function Navbar() {
         <div className="wrapper">
             <div className="search">
                 <input placeholder='search...'></input>
-            <SearchIcon/>
+            <SearchIcon className='icons'/>
             </div>
            
            <div className="right">
+                
                 <LanguageIcon className='icons'/>
                 <span>English</span>
                 <DarkModeIcon className='icons'/>
                 <ZoomInMapIcon className='icons'/>
+                
+                <div className="bellnotify">
                 <NotificationsIcon className='icons'/>
+                  <div className="item">
+                    1
+                  </div>
+                </div>
+                <div className="bellnotify">
                 <ChatBubbleIcon className='icons'/>
+                <div className="item">
+                    1
+                  </div>
+                </div>
                 <DensityMediumIcon className='icons'/>
                 <img className='profilepic' src='https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png'/>
                 <SettingsIcon className='icons'/>

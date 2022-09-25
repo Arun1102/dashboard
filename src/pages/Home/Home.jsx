@@ -9,7 +9,9 @@ function Home() {
      <Sidebar/>
      <div className="content">
       <Navbar/>
-      content
+      <div className="widgets">
+        
+      </div>
      </div>
      
     </div>
