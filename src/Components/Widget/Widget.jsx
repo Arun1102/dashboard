@@ -2,6 +2,9 @@ import React from 'react'
 import './Widget.scss'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import WalletIcon from '@mui/icons-material/Wallet';
 function Widget({type}) {
 
     let data;
@@ -25,7 +28,7 @@ function Widget({type}) {
                     title:"ORDERS",
                     isMoney:true,
                     link:"See all Order",
-                    icon:<PermIdentityIcon className='icon' style={{
+                    icon:<ShoppingCartCheckoutIcon className='icon' style={{
                         color:"green", 
                         backgroundColor:"#B8D6B7"
     
@@ -38,7 +41,7 @@ function Widget({type}) {
                     title:"EARNING",
                     isMoney:true,
                     link:"See all earning",
-                    icon:<PermIdentityIcon className='icon' style={{
+                    icon:<AttachMoneyIcon className='icon' style={{
                         color:"red",
                         backgroundColor:"#F1C2C1"
                         }}/>
@@ -50,7 +53,7 @@ function Widget({type}) {
                     title:"BALANCE",
                     isMoney:true,
                     link:"See all balance",
-                    icon:<PermIdentityIcon className='icon' 
+                    icon:<WalletIcon className='icon' 
                     style={{
                     color:"blue", 
                     backgroundColor:"#A5CDDA"
