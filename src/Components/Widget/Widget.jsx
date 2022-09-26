@@ -2,15 +2,76 @@ import React from 'react'
 import './Widget.scss'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-function Widget() {
+function Widget({type}) {
+
+    let data;
+    let amount = 200
+    switch(type){
+        case "user":
+            data =   {
+                title:"USERS",
+                isMoney:false,
+                link:"See all users",
+                icon:<PermIdentityIcon className='icon' style={{
+                    color:"yellow", 
+                    backgroundColor:"#88E289"
+
+                    }}/>
+                
+            }
+            break;
+        case "order":
+            data =  {
+                    title:"ORDERS",
+                    isMoney:true,
+                    link:"See all Order",
+                    icon:<PermIdentityIcon className='icon' style={{
+                        color:"green", 
+                        backgroundColor:"#B8D6B7"
+    
+                        }}/>
+                    
+                }
+            break;
+        case "earning":
+            data =  {
+                    title:"EARNING",
+                    isMoney:true,
+                    link:"See all earning",
+                    icon:<PermIdentityIcon className='icon' style={{
+                        color:"red",
+                        backgroundColor:"#F1C2C1"
+                        }}/>
+                    
+                }
+                break;
+        case "balance":
+            data =  {
+                    title:"BALANCE",
+                    isMoney:true,
+                    link:"See all balance",
+                    icon:<PermIdentityIcon className='icon' 
+                    style={{
+                    color:"blue", 
+                    backgroundColor:"#A5CDDA"
+
+                    }}/>
+                    
+                }
+                break;
+            
+            default:
+            break;
+    }
+
   return (
     <div className='Widget'>
         <div className="wrapper">
             <div className="left">
-                <span className='title'>Users</span>
-                <span className='counter'>21312</span>
-                <span className='link'>See all users</span>
-                {/* <hr/> */}
+                <span className='title'>{data.title}</span>
+                <span className='counter'>{data.isMoney&&"$"}{amount}</span>
+                <span className='link'>{data.link}</span>
+                
             </div>
             <div className="right">
                 <div className="rightup">
@@ -18,7 +79,8 @@ function Widget() {
                     <div className="percentage red">20 %</div>
                 </div>
                 <div className="rightdown">
-                    <PermIdentityIcon className='icon'/>
+                    {data.icon}
+                    {/* <PermIdentityIcon className='icon'/> */}
                     {/* <div className="percentage">20 %</div> */}
                 </div>
             </div>

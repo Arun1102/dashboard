@@ -1,0 +1,102 @@
+.feature{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    .wrapper{
+        display: flex;
+        // align-items: center;
+        padding: 10px;
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+        flex:3;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+        -webkit-box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+        -moz-box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+        .tabbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .title{
+                color: grey;
+                display: flex;
+                align-self: flex-start;
+                
+            }
+            .icons{
+                color: grey;
+                display: flex;
+                align-self: flex-end;
+            }
+        }
+        .top{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .chartss{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 120px;
+            }
+            .descrip{
+                font-size:20px;
+                color: grey;
+                
+            }
+            .amount{
+                color: black;
+                font-size: 25px;
+            }
+            .tips{
+                font-size: 13px;
+                color: grey;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+
+        .bottom{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .bottomwid{
+                margin-top: 30px;
+                gap: 20px;
+               display: flex;
+               flex-direction: column;
+               color: grey;
+               font-size: 15px;
+               font-weight: 100;
+                .values{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 15px;
+
+                    &.red {
+                        color: red;
+                    }
+                    &.green{
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}

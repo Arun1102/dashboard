@@ -1,0 +1,10 @@
+.Chart{
+    margin: 20px;
+    display: flex;
+    flex: 2;
+    .wrapper{
+        display: flex;
+        flex: 5;
+        background-color: greenyellow;
+    }
+}
