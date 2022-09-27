@@ -5,7 +5,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Widget from '../../Components/Widget/Widget';
 import Featured from '../../Components/Featured/Featured';
 import Chart from '../../Components/Chart/Chart';
-import Charts from '../../Components/Chart/Chart';
+import Table from '../../Components/Table/Table';
 function Home() {
   return (
     <div className='Home'>
@@ -24,8 +24,10 @@ function Home() {
           </div>
           <div className="charts">
             <Chart/>
-           
           </div>
+        </div>
+        <div className="listtables">
+          <Table/>
         </div>
       
      </div>
