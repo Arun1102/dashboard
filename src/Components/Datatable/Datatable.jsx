@@ -9,12 +9,12 @@ function Datatable() {
   return (
     <div className='Datatable'>
     
-      <div style={{ height: 400, width: '100%' }}>
+      <div style={{ height: 600, width: '100%' }}>
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={9}
+        rowsPerPageOptions={[9]}
         checkboxSelection
       />
     </div>  
