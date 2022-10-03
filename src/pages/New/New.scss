@@ -1,3 +1,180 @@
-.new{
-    color: green;
+.New{
+    
+    display: flex;
+    
+    .top{
+        
+        flex:10;
+
+        .titles{
+            width: auto;
+            height: auto;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+            -webkit-box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+            -moz-box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+            
+            span{
+                align-items: center;
+                color: grey;
+            }
+
+        }
+
+        .container{
+            box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+            -webkit-box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+            -moz-box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
+            width: auto;
+            height: auto;
+            padding: 20px;
+            margin: 10px;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            .left{
+                // width: 30px;
+                // height: 30px;
+                display: flex;
+                // background-color: green;
+                justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                .left-image{
+                    display: flex;
+                    width: 180px;
+                    height: 180px;
+                    
+
+                }
+
+
+            }
+            .middleupload{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                }
+
+            .middle{
+                
+                display: flex;
+                flex-wrap: wrap;
+                width: 400px;
+                gap: 20px;
+
+                // .middleupload{
+                // display: flex;
+                // align-items: center;
+                // text-align: center;
+                // gap: 10px;
+                // }
+
+                .middlename{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .middlephone{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .middleaddress{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .rightname{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .rightemail{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .rightpassword{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .rightcountry{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0px;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                .buttonny{
+                    width: 60px;
+                    height: 40px;
+                    color: purple;
+                    border: none;
+                    background-color: plum;
+                
+
+                    &:hover{
+                        background-color: green;
+                    }
+                }
+
+
+            }
+
+            
+        }
+    }
+
+
+    
+
+    
+
+    
 }
