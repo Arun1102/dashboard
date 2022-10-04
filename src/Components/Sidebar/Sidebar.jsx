@@ -9,12 +9,15 @@ import AssessmentIcon from '@mui/icons-material/Assessment';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import LogoutIcon from '@mui/icons-material/Logout';
+import {Link} from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className='Sidebar'>
         <div className="top">
+            <Link to='/' style={{textDecoration:"none"}}>
             <div className="logo">ArunDevAdmin</div>
+            </Link>
         </div>
         <hr></hr>
         <div className="center">
@@ -24,14 +27,18 @@ function Sidebar() {
                     <DashboardIcon className='icons'/>
                     <span>Dashboard</span>
                 </li>
+                <Link to='/users' style={{textDecoration:"none"}}>
                 <li>
                     <PersonOutlineIcon className='icons'/>
                     <span>Users</span>
                 </li>
+                </Link>
+                <Link to='/product' style={{textDecoration:"none"}}>
                 <li>
                     <StorefrontIcon className='icons'/>
                     <span>Products</span>
                 </li>
+                </Link>
                 <li>
                     <CreditCardIcon className='icons'/>
                     <span>Orders</span>

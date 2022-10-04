@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './New.scss'
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import Navbar from '../../Components/Navbar/Navbar';
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
-function New() {
+
+
+function New({input,title}) {
+
+  const [file,setFile] = useState("")
+  console.log(file);
   return (
     <div className='New'>
       <Sidebar/>
@@ -11,30 +16,32 @@ function New() {
       <div className="top">
         <Navbar/>
           <div className="titles">
-              <span>Add New User</span>
+              <span>{title}</span>
           </div>
 
           <div className="container">
             <div className="left">
             
-              <img className='left-image' src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw0b303b51/images/page-designer/2022/august_2/14390_Comp_E_Image1.jpg?sw=991&sfrm=jpg" alt="" />
+              <img className='left-image' src={file ? URL.createObjectURL(file):"https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"} alt="" />
             </div>
             <form>
               <div className="middleupload">
-                    <span>Image:</span>
-                    <DriveFolderUploadIcon/>
+                  <label htmlFor='file'>
+                    <span >Upload:</span>
+                    <DriveFolderUploadIcon />
+                    </label>
+                    <input type="file" id='file' onChange={e=>setFile(e.target.files[0])} style={{display:"none"}}></input>
               </div>
 
               <div className="middle">
                
-                
-              
+              {input.map((inputs)=>(
                 <div className="middlename">
-                  <label>Name and surname</label>
-                  <input type="text" placeholder='Name'/>
+                  <label>{inputs.label}</label>
+                  <input type={inputs.type} placeholder={inputs.placeholder}/>
                 </div>
-
-                <div className="middlephone">
+              ))  }
+                {/* <div className="middlephone">
                   <label>Phone</label>
                   <input type="text" placeholder='Phone No'/>
                 </div>
@@ -62,10 +69,11 @@ function New() {
                 <div className="rightcountry">
                   <label>Country</label>
                   <input type="text" placeholder='USA'/>
-                </div>
+                </div> */}
                
                 <button className='buttonny'>Submit</button>
               </div>
+
               </form>
                
           </div>
