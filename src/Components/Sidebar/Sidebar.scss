@@ -1,5 +1,5 @@
 .Sidebar{
-   background-color: GhostWhite;
+   background-color: transparent;
    color: black;
    min-height: 100vh;
    flex: 2;
@@ -67,9 +67,9 @@
     .bottom{
         display: flex;
         align-items: center;
-        position: absolute;
-        bottom: 0;
-        right: 1;
+        // position: absolute;
+        // bottom: 0;
+        // right: 1;
         margin: 10px;
         justify-content: center;
         .title{
@@ -86,10 +86,10 @@
             margin: 5px;
 
             &:nth-child(1){
-                background-color: white;
+                background-color: black;
             }
             &:nth-child(2){
-                background-color: black;
+                background-color: white;
             }
 
         }
