@@ -6,11 +6,12 @@ import {Link} from "react-router-dom";
 
 function Datatable({title}) {
 
-  const [data, setData] = useState("rows");
+  const [data, setData] = useState(rows);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
+
   const actionColumn = [
     {
       field: "action",
@@ -33,27 +34,25 @@ function Datatable({title}) {
       },
     },
   ];
-
   return (
-    <div className='Datatable'>
-    <div className="datatableTitle">
+    <div className="datatable">
+      <div className="datatableTitle">
         {title}
         <Link to="/users/new" className="link">
           Add New
         </Link>
       </div>
-      <div style={{ height: 600, width: '100%' }}>
       <DataGrid
-        rows={rows}
+        className="datagrid"
+        rows={data}
         columns={columns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
       />
-    </div>  
-      
     </div>
-  )
-}
+  );
+};
+
 
 export default Datatable
