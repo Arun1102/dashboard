@@ -82,7 +82,7 @@ function Widget({type}) {
                     <div className="percentage red">20 %</div>
                 </div>
                 <div className="rightdown">
-                    {data.icon}
+                    <div className="icons">{data.icon}</div>
                     {/* <PermIdentityIcon className='icon'/> */}
                     {/* <div className="percentage">20 %</div> */}
                 </div>

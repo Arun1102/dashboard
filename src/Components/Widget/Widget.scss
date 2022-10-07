@@ -7,12 +7,14 @@
     
     
     .wrapper{
-        width: auto;
+        width: 450px;
         height: auto;
         border-radius: 5px;
         display: flex;
         text-align: left;
-        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
         gap: 50px;
         background-color: transparent;
         box-shadow: -1px 5px 9px -2px rgba(71,71,71,0.75);
@@ -30,17 +32,17 @@
             }
 
             .title{
-
+                font-size: 30px;
             }
 
             .counter{
-                font-size: 28px;
+                font-size: 40px;
                 font-weight: 300;
             }
 
             .link{
                 width: max-content;
-                font-size: 12px;
+                font-size: 20px;
                 border-bottom: 0.5px solid grey;
             }
 
@@ -67,7 +69,7 @@
                     }
                 }
                 .percentage{
-                    // font-size: 20px;
+                    font-size: 20px;
 
                     &.green{
                         color: green;
@@ -82,10 +84,11 @@
             .rightdown{
                display: flex;
                align-self: flex-end;
-                .icon{
+               
+                .icons{
+                   
                     
                     
-                    // background-color: aqua;
                 }
             }
 
